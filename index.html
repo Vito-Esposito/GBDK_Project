@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head lang="ita">
+        <title>GBDK Personal Project | Ho_Lus</title>
+
+        <style>
+
+            @font-face {
+                font-family: "GillSansCustom"; /* Nome che userai per riferirti al font */
+                src: url("GillSansBold.ttf") format("truetype"); /* Percorso del file ttf */
+            }
+
+            pre {
+            font-family: Consolas; /* Font a spaziatura fissa */
+            color: #000000; /* Colore del testo */
+            font-size: 17px;
+            text-align: left;
+            padding-bottom: 15px;
+            }
+
+            #titolo{
+                color: rgb(61, 68, 148);
+                text-align: center;
+                font-size: 350%;
+                padding: 30px;
+                text-shadow: 2px 2px 0px black;
+                font-family: "GillSansCustom", sans-serif;
+            }
+
+            #riquadro_titolo{
+                background-color: rgb(134, 157, 87);
+                margin-left: 450px;
+                margin-right: 450px;
+                border-radius: 10px;
+                outline: 1px solid black;
+            }
+
+            .titolo_paragrafo{
+                color: rgb(164, 30, 80);
+                font-size: 30px;
+                text-shadow: 1px 1px 0px black;
+                font-family: "GillSansCustom", sans-serif;
+                margin-top: 70px;
+                margin-left: 30px;
+                padding-top: 20px;
+                padding-bottom: 5px;
+            }
+
+            .riquadro_titolo_paragrafo{
+                background-color: rgb(177, 173, 172);
+                border-radius: 10px;
+                padding-bottom: 80px;
+                margin-right: 360px;
+                margin-left: 30px;
+                outline: 1px solid black;
+            }
+
+        </style>
+
+    </head>
+    <body style="background-color: rgb(197, 191, 191);">
+        <div id="riquadro_titolo">
+            <h1  id="titolo">GBDK Project | Ho_Lus</h1>
+        </div>
+
+        <p>
+                <div style="position: absolute;
+                            font-family: GillSansCustom;
+                            right: 130px;
+                            top: 60px;
+                            color: rgb(164, 30, 80);
+                            font-size: 20px;
+                            text-shadow: 1px 1px 0px black;">
+                    RESOURCES</div>
+                <div>
+
+                <ul style="font-family: 'GillSansCustom', sans-serif; color: rgb(61, 68, 148); font-size: 16px; position: absolute; right: 130px; top: 70px;">
+                    <li>GBDK-2020 4.3.0</li>
+                    <li>EMULICIOUS</li>
+                </ul>                 
+        </p>
+
+        </div>
+
+        <div class="riquadro_titolo_paragrafo">
+            <div class="titolo_paragrafo">PRIMA PROVA</div>
+                <pre>
+                        #include &ltgb/gb.h&gt
+                        #include &ltstdint.h&gt
+                        #include &ltstdio.h&gt
+
+
+                        void main(void){
+                            printf("Ciao :)");
+
+                            // Loop forever
+                            while(1) {
+
+                                // Game main loop processing goes here
+
+                                // Done processing, yield CPU and wait for start of next frame
+                                vsync();
+                            }
+                        }
+                </pre>
+
+                <img style=" position: absolute; left: 1020px; top: 280px; width: 500px; outline: 1px solid black; border-radius: 8px;" src="images\file01.png" alt="Caricamento fallito">
+
+        </div>
+        
+        <img style=" position: absolute; left: 1020px; top: 440px; width: 300px; outline: 1px solid black; border-radius: 8px;" src="images\screen01.png" alt="Caricamento fallito">
+
+
+    </body>
+</html>
