@@ -1,39 +1,24 @@
 #include <gb/gb.h>
 #include <stdint.h>
 #include <stdio.h>
+#include "tilet.h"
 
 
 void main(void){
 
-    uint8_t Pulsante;
+    set_bkg_data(0, 1, Tile);
+    init_bkg(0);
 
-    printf("Premi un pulsante:");
+    SHOW_BKG;
+    DISPLAY_ON;
+
+
+
+
 
     // Loop forever
     while(1) {
 
-            Pulsante= joypad();
-
-            if(Pulsante == J_A)
-                printf("A");
-            if(Pulsante == J_B)
-                printf("B");
-            if(Pulsante == J_START)
-                printf("START");
-            if(Pulsante == J_SELECT)
-                printf("SELECT");
-            if(Pulsante == J_UP)
-                printf("UP");
-            if(Pulsante == J_DOWN)
-                printf("DOWN");
-            if(Pulsante == J_LEFT)
-                printf("LEFT");
-            if(Pulsante == J_RIGHT)
-                printf("RIGHT");
-
-            printf("\n");
-
-            while(Pulsante == joypad());
 
 		// Game main loop processing goes here
 
